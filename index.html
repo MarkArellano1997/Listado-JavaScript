@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="h-full md:h-[85vh] bg-[linear-gradient(to_right,rgba(33,150,243,0.8),rgba(0,150,136,0.8)),url('/fondo.png')]"> 
+    
+    <div class="w-3/5 mx-auto mt-16">
+
+        <h1 class="bg-purple-700 p-4 text-6xl text-center font-semibold text-white">
+            Listado de Personas
+        </h1>
+
+        <div class="bg-white mt-14 p-4 rounded h-full">
+            <ul class="list-disc mx-8" id="list">
+                <li>
+                    Marcos Arellano
+                </li>
+                <li>
+                    Ismael Arellano
+                </li>
+            </ul>
+        </div>
+
+        <div class="h-full bg-white mt-10 p-4 rounded">
+
+            <button class="w-20 h-20 rounded-full border flex items-center bg-purple-700 mx-auto" onclick="unir(this)">
+                <p class="text-center w-full text-3xl">+</p>
+            </button>
+
+            <form class="text-center mt-4" id="form">
+                <input class="focus:border-b-4 border-purple-400 p-2 outline-none" type="text" placeholder="Nombre">
+                <input class="focus:border-b-4 border-purple-400 p-2 outline-none" type="text" placeholder="Apellido">
+            </form>
+
+        </div>
+        
+    </div>
+
+    
+<script src="/app.js"></script>
+    
+</body>
+</html>
